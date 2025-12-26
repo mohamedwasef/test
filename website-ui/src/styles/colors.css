@@ -1,0 +1,243 @@
+/**
+ * Platforms Code Design System - Colors
+ * Comprehensive color palette for consistent and accessible interfaces
+ */
+
+:root {
+  /* ===== Neutral Colors ===== */
+  /* Gray 25 */
+  --color-gray-25: #fcfcfd;
+
+  /* Gray 50 */
+  --color-gray-50: #f9fafb;
+
+  /* Gray 100 */
+  --color-gray-100: #f3f4f6;
+
+  /* Gray 200 */
+  --color-gray-200: #e5e7eb;
+
+  /* Gray 300 */
+  --color-gray-300: #d2d6db;
+
+  /* Gray 400 */
+  --color-gray-400: #9da4ae;
+
+  /* Gray 500 */
+  --color-gray-500: #6c737f;
+
+  /* Gray 600 */
+  --color-gray-600: #4d5761;
+
+  /* Gray 700 */
+  --color-gray-700: #384250;
+
+  /* Gray 800 */
+  --color-gray-800: #1f2a37;
+
+  /* Gray 900 */
+  --color-gray-900: #111927;
+
+  /* Gray 950 */
+  --color-gray-950: #0d121c;
+
+  /* ===== Primary Colors (SA Green) ===== */
+  /* SA 25 */
+  --color-primary-25: #f7fdf9;
+
+  /* SA 50 */
+  --color-primary-50: #f3fcf6;
+
+  /* SA 100 */
+  --color-primary-100: #dff6e7;
+
+  /* SA 200 */
+  --color-primary-200: #b8eacb;
+
+  /* SA 300 */
+  --color-primary-300: #88d8ad;
+
+  /* SA 400 */
+  --color-primary-400: #54c08a;
+
+  /* SA 500 */
+  --color-primary-500: #25935f;
+
+  /* SA 600 */
+  --color-primary-600: #1b8354;
+
+  /* SA 700 */
+  --color-primary-700: #166a45;
+
+  /* SA 800 */
+  --color-primary-800: #14573a;
+
+  /* SA 900 */
+  --color-primary-900: #104631;
+
+  /* SA 950 */
+  --color-primary-950: #092a1e;
+
+  /* ===== Secondary Colors (Gold) ===== */
+  /* Gold 25 */
+  --color-gold-25: #fffef7;
+
+  /* Gold 50 */
+  --color-gold-50: #fffef2;
+
+  /* Gold 100 */
+  --color-gold-100: #fffce6;
+
+  /* Gold 200 */
+  --color-gold-200: #fcf3bd;
+
+  /* Gold 300 */
+  --color-gold-300: #fae996;
+
+  /* Gold 400 */
+  --color-gold-400: #f7d54d;
+
+  /* Gold 500 */
+  --color-gold-500: #f5bd02;
+
+  /* Gold 600 */
+  --color-gold-600: #dba102;
+
+  /* Gold 700 */
+  --color-gold-700: #b87b02;
+
+  /* Gold 800 */
+  --color-gold-800: #945c01;
+
+  /* Gold 900 */
+  --color-gold-900: #6e3c00;
+
+  /* Gold 950 */
+  --color-gold-950: #472400;
+
+  /* ===== Lavender Colors ===== */
+  /* Lavender 25 */
+  --color-lavender-25: #fefcff;
+
+  /* Lavender 50 */
+  --color-lavender-50: #f9f5fa;
+
+  /* Lavender 100 */
+  --color-lavender-100: #f2e9f5;
+
+  /* Lavender 200 */
+  --color-lavender-200: #e1cce8;
+
+  /* Lavender 300 */
+  --color-lavender-300: #ccadd9;
+
+  /* Lavender 400 */
+  --color-lavender-400: #a57bba;
+
+  /* Lavender 500 */
+  --color-lavender-500: #80519f;
+
+  /* Lavender 600 */
+  --color-lavender-600: #6d428f;
+
+  /* Lavender 700 */
+  --color-lavender-700: #532d75;
+
+  /* Lavender 800 */
+  --color-lavender-800: #3d1d5e;
+
+  /* Lavender 900 */
+  --color-lavender-900: #281047;
+
+  /* Lavender 950 */
+  --color-lavender-950: #16072e;
+
+  /* ===== Semantic Colors ===== */
+
+  /* Error Colors */
+  --color-error-25: #fffbfa;
+  --color-error-50: #fef3f2;
+  --color-error-100: #fee4e2;
+  --color-error-200: #fecdca;
+  --color-error-300: #fda29b;
+  --color-error-400: #f97066;
+  --color-error-500: #f04438;
+  --color-error-600: #d92d20;
+  --color-error-700: #b42318;
+  --color-error-800: #912018;
+  --color-error-900: #7a271a;
+  --color-error-950: #55160c;
+
+  /* Warning Colors */
+  --color-warning-25: #fffcf5;
+  --color-warning-50: #fffaeb;
+  --color-warning-100: #fef0c7;
+  --color-warning-200: #fedf89;
+  --color-warning-300: #fec84b;
+  --color-warning-400: #fdb022;
+  --color-warning-500: #f79009;
+  --color-warning-600: #dc6803;
+  --color-warning-700: #b54708;
+  --color-warning-800: #93370d;
+  --color-warning-900: #7a2e0e;
+  --color-warning-950: #4e1d09;
+
+  /* Info Colors */
+  --color-info-25: #f5faff;
+  --color-info-50: #eff8ff;
+  --color-info-100: #d1e9ff;
+  --color-info-200: #b2ddff;
+  --color-info-300: #84caff;
+  --color-info-400: #53b1fd;
+  --color-info-500: #2e90fa;
+  --color-info-600: #1570ef;
+  --color-info-700: #175cd3;
+  --color-info-800: #1849a9;
+  --color-info-900: #194185;
+  --color-info-950: #102a56;
+
+  /* Success Colors */
+  --color-success-25: #f6fef9;
+  --color-success-50: #ecfdf3;
+  --color-success-100: #dcfae6;
+  --color-success-200: #abefc6;
+  --color-success-300: #75e0a7;
+  --color-success-400: #47cd89;
+  --color-success-500: #17b26a;
+  --color-success-600: #079455;
+  --color-success-700: #067647;
+  --color-success-800: #085d3a;
+  --color-success-900: #074d31;
+  --color-success-950: #053321;
+
+  /* ===== Gradient Colors ===== */
+  --gradient-sa-600-500-90: linear-gradient(90deg, #1b8354 0%, #25935f 100%);
+  --gradient-sa-700-600-45: linear-gradient(45deg, #166a45 0%, #1b8354 100%);
+  --gradient-sa-950-600-45: linear-gradient(45deg, #092a1e 0%, #1b8354 100%);
+  --gradient-sa-800-600-90: linear-gradient(90deg, #14573a 0%, #1b8354 100%);
+  --gradient-sa-800-700-26: linear-gradient(26.5deg, #14573a 0%, #166a45 100%);
+  --gradient-sa-900-600-45: linear-gradient(45deg, #104631 0%, #1b8354 100%);
+
+  /* ===== Text Colors ===== */
+
+  /* Dark Text on Light Backgrounds */
+  --text-primary-light-bg: #0d121c;
+  --text-secondary-light-bg: #384250;
+  --text-tertiary-light-bg: #4d5761;
+
+  /* Light Text on Dark Backgrounds */
+  --text-primary-dark-bg: #ffffff;
+  --text-secondary-dark-bg: rgba(255, 255, 255, 0.7);
+  --text-tertiary-dark-bg: rgba(255, 255, 255, 0.6);
+
+  /* SA Text Colors on Light Backgrounds */
+  --text-primary-sa-light-bg: #14573a;
+  --text-secondary-sa-light-bg: #1b8354;
+  --text-tertiary-sa-light-bg: #25935f;
+
+  /* Semantic Text Colors */
+  --text-error-primary: #d92d20;
+  --text-warning-primary: #dc6803;
+  --text-success-primary: #1b8354;
+  --text-info-primary: #1570ef;
+}

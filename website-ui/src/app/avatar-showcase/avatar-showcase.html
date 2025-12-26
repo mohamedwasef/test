@@ -1,0 +1,416 @@
+<div class="showcase-container">
+  <h1 class="showcase-title">Avatar Component Showcase</h1>
+  
+  <!-- Initials - Rounded -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Initials - Rounded</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Initials'"
+          [textEn]="'AB'"
+          [size]="size"
+          [square]="false"
+          [border]="false">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icon - Rounded -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Icon - Rounded</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Icon'"
+          [size]="size"
+          [square]="false"
+          [border]="false">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image - Rounded -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Image - Rounded</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Image'"
+          [size]="size"
+          [square]="false"
+          [border]="false"
+          [imageUrl]="sampleImageUrl">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Initials - Square -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Initials - Square</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Initials'"
+          [textEn]="'AB'"
+          [size]="size"
+          [square]="true"
+          [border]="false">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icon - Square -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Icon - Square</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Icon'"
+          [size]="size"
+          [square]="true"
+          [border]="false">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image - Square -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Image - Square</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Image'"
+          [size]="size"
+          [square]="true"
+          [border]="false"
+          [imageUrl]="sampleImageUrl">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- With Border Examples -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">With Border - Rounded</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Initials'"
+          [textEn]="'AB'"
+          [size]="size"
+          [square]="false"
+          [border]="true">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">With Border - Square</h2>
+    <div class="showcase-grid">
+      <div *ngFor="let size of sizes" class="showcase-item">
+        <app-avatar 
+          [type]="'Initials'"
+          [textEn]="'AB'"
+          [size]="size"
+          [square]="true"
+          [border]="true">
+        </app-avatar>
+        <span class="showcase-label">{{ size }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avatar Group - Stacked -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Avatar Group - Stacked (Overlapping)</h2>
+    <div class="avatar-group-showcase">
+      <div class="avatar-group-demo">
+        <h3>Default (5 avatars, no overflow)</h3>
+        <app-avatar-group
+          [avatars]="sampleAvatars"
+          [stacked]="true"
+          [size]="'32px'"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>With Overflow Counter (+3)</h3>
+        <app-avatar-group
+          [avatars]="largeGroupAvatars"
+          [stacked]="true"
+          [size]="'32px'"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>Different Size (40px)</h3>
+        <app-avatar-group
+          [avatars]="sampleAvatars"
+          [stacked]="true"
+          [size]="'40px'"
+          [maxDisplay]="4">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>Large Size (48px)</h3>
+        <app-avatar-group
+          [avatars]="mixedAvatars"
+          [stacked]="true"
+          [size]="'48px'"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>Square Variant</h3>
+        <app-avatar-group
+          [avatars]="sampleAvatars"
+          [stacked]="true"
+          [size]="'32px'"
+          [square]="true"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avatar Group - Unstacked -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Avatar Group - Unstacked (With Spacing)</h2>
+    <div class="avatar-group-showcase">
+      <div class="avatar-group-demo">
+        <h3>Default (5 avatars, no overflow)</h3>
+        <app-avatar-group
+          [avatars]="sampleAvatars"
+          [stacked]="false"
+          [size]="'32px'"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>With Overflow Counter (+3)</h3>
+        <app-avatar-group
+          [avatars]="largeGroupAvatars"
+          [stacked]="false"
+          [size]="'32px'"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>Different Size (40px)</h3>
+        <app-avatar-group
+          [avatars]="sampleAvatars"
+          [stacked]="false"
+          [size]="'40px'"
+          [maxDisplay]="4">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>Mixed Types</h3>
+        <app-avatar-group
+          [avatars]="mixedAvatars"
+          [stacked]="false"
+          [size]="'32px'"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+
+      <div class="avatar-group-demo">
+        <h3>Square Variant</h3>
+        <app-avatar-group
+          [avatars]="sampleAvatars"
+          [stacked]="false"
+          [size]="'32px'"
+          [square]="true"
+          [maxDisplay]="5">
+        </app-avatar-group>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage Examples -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Common Usage Examples</h2>
+    <div class="usage-examples">
+      <div class="usage-example">
+        <h3>User Profile</h3>
+        <div class="example-demo">
+          <app-avatar 
+            [type]="'Image'"
+            [size]="'64px'"
+            [square]="false"
+            [border]="true"
+            [imageUrl]="sampleImageUrl">
+          </app-avatar>
+          <div class="example-info">
+            <p class="example-name">Mohammed Amasha</p>
+            <p class="example-role">Software Engineer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usage-example">
+        <h3>Comment Section</h3>
+        <div class="example-demo">
+          <app-avatar 
+            [type]="'Initials'"
+            [textEn]="'MA'"
+            [size]="'40px'"
+            [square]="false"
+            [border]="false">
+          </app-avatar>
+          <div class="example-info">
+            <p class="example-name">Mohammed A.</p>
+            <p class="example-comment">This is a sample comment text...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usage-example">
+        <h3>User List</h3>
+        <div class="example-demo">
+          <app-avatar 
+            [type]="'Icon'"
+            [size]="'32px'"
+            [square]="false"
+            [border]="false">
+          </app-avatar>
+          <div class="example-info">
+            <p class="example-name">Guest User</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usage-example">
+        <h3>Team Members</h3>
+        <div class="example-demo">
+          <app-avatar-group
+            [avatars]="largeGroupAvatars"
+            [stacked]="true"
+            [size]="'32px'"
+            [maxDisplay]="4">
+          </app-avatar-group>
+          <div class="example-info">
+            <p class="example-name">Project Team</p>
+            <p class="example-comment">8 members collaborating</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="usage-example">
+        <h3>Event Attendees</h3>
+        <div class="example-demo">
+          <app-avatar-group
+            [avatars]="sampleAvatars"
+            [stacked]="false"
+            [size]="'40px'"
+            [maxDisplay]="3">
+          </app-avatar-group>
+          <div class="example-info">
+            <p class="example-name">Meeting Participants</p>
+            <p class="example-comment">5 people attending</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Controls -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Component Properties</h2>
+    <div class="properties-info">
+      <div class="property">
+        <h4>Size</h4>
+        <code>24px | 32px | 40px | 48px | 64px | 80px | 120px</code>
+      </div>
+      <div class="property">
+        <h4>Type</h4>
+        <code>Icon | Initials | Image</code>
+      </div>
+      <div class="property">
+        <h4>Shape</h4>
+        <code>square: boolean (default: false)</code>
+      </div>
+      <div class="property">
+        <h4>Border</h4>
+        <code>border: boolean (default: false)</code>
+      </div>
+      <div class="property">
+        <h4>Text</h4>
+        <code>textEn: string (default: 'AB')</code>
+      </div>
+      <div class="property">
+        <h4>Image URL</h4>
+        <code>imageUrl?: string</code>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avatar Group Properties -->
+  <section class="showcase-section">
+    <h2 class="showcase-section-title">Avatar Group Properties</h2>
+    <div class="properties-info">
+      <div class="property">
+        <h4>Avatars</h4>
+        <code>avatars: AvatarGroupMember[]</code>
+      </div>
+      <div class="property">
+        <h4>Stacked</h4>
+        <code>stacked: boolean (default: true)</code>
+      </div>
+      <div class="property">
+        <h4>Size</h4>
+        <code>size: AvatarSize (default: '32px')</code>
+      </div>
+      <div class="property">
+        <h4>Max Display</h4>
+        <code>maxDisplay: number (default: 5)</code>
+      </div>
+      <div class="property">
+        <h4>Square</h4>
+        <code>square: boolean (default: false)</code>
+      </div>
+    </div>
+    <div style="margin-top: 24px; padding: 16px; background-color: var(--color-primary-50); border-radius: var(--radius-md); border-left: 4px solid var(--color-primary-600);">
+      <p style="margin: 0; font-size: var(--font-size-body-sm); color: var(--color-primary-800);">
+        <strong>Note:</strong> Avatar groups come in two forms: the <strong>stacked</strong> version, where avatars overlap without gaps, 
+        and the <strong>unstacked</strong> version, where there is spacing between each avatar. 
+        When the number of avatars exceeds <code>maxDisplay</code>, a counter avatar (e.g., "+3") is automatically shown.
+      </p>
+    </div>
+  </section>
+
+  <!-- Design System Link -->
+  <section class="showcase-section">
+    <div class="design-link">
+      <h3>Design System Reference</h3>
+      <p>
+        View the complete design guidelines at: 
+        <a href="https://design.dga.gov.sa/guidelines/components/data-display/avatar" target="_blank">
+          Avatar Component Guidelines
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+

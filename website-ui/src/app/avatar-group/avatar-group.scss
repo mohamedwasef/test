@@ -1,0 +1,83 @@
+/* Avatar Group Styles */
+.avatar-group {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Stacked variant - avatars overlap */
+.avatar-group-stacked {
+  padding-left: 0;
+  padding-right: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Unstacked variant - avatars have spacing */
+.avatar-group-unstacked {
+  gap: 4px;
+}
+
+/* Individual avatar item */
+.avatar-group-item {
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Stacked items have negative margin to overlap */
+.avatar-group-item-stacked {
+  margin-right: -4px;
+}
+
+/* Ensure avatars in group always have white border */
+.avatar-group ::ng-deep .avatar-bg {
+  border-color: white;
+  border-width: 2px;
+}
+
+.avatar-group ::ng-deep .avatar-image {
+  border-color: white;
+  border-width: 2px;
+}
+
+/* Add z-index stacking for proper overlap */
+.avatar-group-stacked .avatar-group-item:nth-child(1) {
+  z-index: 10;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(2) {
+  z-index: 9;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(3) {
+  z-index: 8;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(4) {
+  z-index: 7;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(5) {
+  z-index: 6;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(6) {
+  z-index: 5;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(7) {
+  z-index: 4;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(8) {
+  z-index: 3;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(9) {
+  z-index: 2;
+}
+
+.avatar-group-stacked .avatar-group-item:nth-child(10) {
+  z-index: 1;
+}
+

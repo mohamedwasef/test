@@ -1,0 +1,27 @@
+/**
+ * Platforms Code Design System - Border Radius
+ * Pre-defined radius system for consistent rounding
+ */
+
+:root {
+  /* Radius None - No rounding */
+  --radius-none: 0;
+
+  /* Radius XS - Extra small rounding (2px) */
+  --radius-xs: 0.125rem;
+
+  /* Radius SM - Small rounding (4px) */
+  --radius-sm: 0.25rem;
+
+  /* Radius MD - Medium rounding (8px) */
+  --radius-md: 0.5rem;
+
+  /* Radius LG - Large rounding (16px) */
+  --radius-lg: 1rem;
+
+  /* Radius XL - Extra large rounding (24px) */
+  --radius-xl: 1.5rem;
+
+  /* Radius Full - Perfect circle/pill shape */
+  --radius-full: 9999px;
+}

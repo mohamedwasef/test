@@ -1,0 +1,257 @@
+/* Avatar Component Styles */
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Size Variants */
+.avatar-size-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.avatar-size-32 {
+  width: 32px;
+  height: 32px;
+}
+
+.avatar-size-40 {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-size-48 {
+  width: 48px;
+  height: 48px;
+}
+
+.avatar-size-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.avatar-size-80 {
+  width: 80px;
+  height: 80px;
+}
+
+.avatar-size-120 {
+  width: 120px;
+  height: 120px;
+}
+
+/* Background */
+.avatar-bg {
+  position: absolute;
+  inset: 0;
+  border-style: solid;
+  border-color: white;
+}
+
+.avatar-bg-neutral {
+  background-color: var(--color-gray-100);
+}
+
+.avatar-bg-white {
+  background-color: white;
+}
+
+.avatar-bg-round {
+  border-radius: var(--radius-full);
+}
+
+.avatar-bg-square {
+  border-radius: var(--radius-sm);
+}
+
+.avatar-size-120 .avatar-bg-square {
+  border-radius: var(--radius-md);
+}
+
+.avatar-border-thin {
+  border-width: 2px;
+}
+
+.avatar-border-thick {
+  border-width: 4px;
+}
+
+/* Placeholder Container */
+.avatar-placeholder {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
+}
+
+.avatar-placeholder-24 {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+}
+
+.avatar-placeholder-32 {
+  inset: 12.5%;
+}
+
+.avatar-placeholder-40 {
+  inset: 10%;
+}
+
+.avatar-placeholder-48-120 {
+  inset: 16.67%;
+}
+
+.avatar-placeholder-64 {
+  inset: 18.75%;
+}
+
+.avatar-placeholder-80 {
+  inset: 15%;
+}
+
+/* Icon */
+.avatar-icon {
+  color: var(--color-gray-900);
+  display: block;
+}
+
+/* Text Styles */
+.avatar-text {
+  color: var(--color-gray-950);
+  text-align: center;
+  width: 100%;
+  white-space: pre-wrap;
+  line-height: 1;
+  margin: 0;
+}
+
+.avatar-text-2xs {
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  line-height: 14px;
+}
+
+.avatar-text-xs {
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 18px;
+}
+
+.avatar-text-sm {
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 20px;
+}
+
+.avatar-text-md {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  line-height: 24px;
+}
+
+.avatar-text-xl {
+  font-size: 20px;
+  font-weight: var(--font-weight-medium);
+  line-height: 30px;
+}
+
+.avatar-text-display-sm {
+  font-size: 30px;
+  font-weight: var(--font-weight-regular);
+  line-height: 38px;
+}
+
+.avatar-text-display-md {
+  font-size: 36px;
+  font-weight: var(--font-weight-regular);
+  line-height: 44px;
+  letter-spacing: -0.72px;
+}
+
+/* Ring/Border Overlay */
+.avatar-ring {
+  position: absolute;
+  inset: 0;
+  border-style: solid;
+  border-color: rgba(22, 22, 22, 0.2);
+  pointer-events: none;
+}
+
+.avatar-ring-round {
+  border-radius: var(--radius-full);
+}
+
+.avatar-ring-square {
+  border-radius: var(--radius-sm);
+}
+
+.avatar-size-120 .avatar-ring-square {
+  border-radius: var(--radius-md);
+}
+
+.avatar-ring-thin {
+  border-width: 1px;
+}
+
+.avatar-ring-thick {
+  border-width: 2px;
+}
+
+/* Image Container */
+.avatar-image {
+  position: absolute;
+  inset: 0;
+  border-style: solid;
+  border-color: white;
+  overflow: hidden;
+}
+
+.avatar-image-round {
+  border-radius: var(--radius-full);
+}
+
+/* Ensure round image inside also gets rounded */
+.avatar-image-round .avatar-img {
+  border-radius: var(--radius-full);
+}
+
+.avatar-image-square {
+  border-radius: var(--radius-sm);
+}
+
+.avatar-size-120 .avatar-image-square {
+  border-radius: var(--radius-md);
+}
+
+/* Ensure square image inside also gets rounded */
+.avatar-image-square .avatar-img {
+  border-radius: var(--radius-sm);
+}
+
+.avatar-size-120 .avatar-image-square .avatar-img {
+  border-radius: var(--radius-md);
+}
+
+.avatar-image-border-thin {
+  border-width: 2px;
+}
+
+.avatar-image-border-thick {
+  border-width: 4px;
+}
+
+/* Actual Image Element */
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+

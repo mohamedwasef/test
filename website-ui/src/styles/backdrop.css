@@ -1,0 +1,39 @@
+/**
+ * Platforms Code Design System - Backdrop Blur Effects
+ * Backdrop blur values for depth and focus effects
+ */
+
+:root {
+  /* Backdrop Blur SM - 8px blur */
+  --backdrop-blur-sm: blur(8px);
+
+  /* Backdrop Blur MD - 16px blur */
+  --backdrop-blur-md: blur(16px);
+
+  /* Backdrop Blur LG - 24px blur */
+  --backdrop-blur-lg: blur(24px);
+
+  /* Backdrop Blur XL - 40px blur */
+  --backdrop-blur-xl: blur(40px);
+}
+
+/* Utility Classes */
+.backdrop-blur-sm {
+  backdrop-filter: var(--backdrop-blur-sm);
+  -webkit-backdrop-filter: var(--backdrop-blur-sm);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: var(--backdrop-blur-md);
+  -webkit-backdrop-filter: var(--backdrop-blur-md);
+}
+
+.backdrop-blur-lg {
+  backdrop-filter: var(--backdrop-blur-lg);
+  -webkit-backdrop-filter: var(--backdrop-blur-lg);
+}
+
+.backdrop-blur-xl {
+  backdrop-filter: var(--backdrop-blur-xl);
+  -webkit-backdrop-filter: var(--backdrop-blur-xl);
+}
