@@ -1,83 +1,91 @@
-/* Avatar Component Styles */
-.avatar-container {
+/**
+ * Avatar Component - Framework Agnostic Styles
+ * Visual representation of users, commonly displayed in profiles, comments, or messaging apps
+ * RTL-ready using CSS logical properties
+ */
+
+/* Container */
+.ds-avatar {
   position: relative;
   display: inline-block;
+  /* Ensures proper RTL support */
+  direction: inherit;
 }
 
 /* Size Variants */
-.avatar-size-24 {
+.ds-avatar--24 {
   width: 24px;
   height: 24px;
 }
 
-.avatar-size-32 {
+.ds-avatar--32 {
   width: 32px;
   height: 32px;
 }
 
-.avatar-size-40 {
+.ds-avatar--40 {
   width: 40px;
   height: 40px;
 }
 
-.avatar-size-48 {
+.ds-avatar--48 {
   width: 48px;
   height: 48px;
 }
 
-.avatar-size-64 {
+.ds-avatar--64 {
   width: 64px;
   height: 64px;
 }
 
-.avatar-size-80 {
+.ds-avatar--80 {
   width: 80px;
   height: 80px;
 }
 
-.avatar-size-120 {
+.ds-avatar--120 {
   width: 120px;
   height: 120px;
 }
 
-/* Background */
-.avatar-bg {
+/* Background Layer */
+.ds-avatar__bg {
   position: absolute;
   inset: 0;
   border-style: solid;
   border-color: white;
 }
 
-.avatar-bg-neutral {
+.ds-avatar__bg--neutral {
   background-color: var(--color-gray-100);
 }
 
-.avatar-bg-white {
+.ds-avatar__bg--white {
   background-color: white;
 }
 
-.avatar-bg-round {
+.ds-avatar__bg--round {
   border-radius: var(--radius-full);
 }
 
-.avatar-bg-square {
+.ds-avatar__bg--square {
   border-radius: var(--radius-sm);
 }
 
-.avatar-size-120 .avatar-bg-square {
+.ds-avatar--120 .ds-avatar__bg--square {
   border-radius: var(--radius-md);
 }
 
-.avatar-border-thin {
+.ds-avatar__bg--border-thin {
   border-width: 2px;
 }
 
-.avatar-border-thick {
+.ds-avatar__bg--border-thick {
   border-width: 4px;
 }
 
-/* Placeholder Container */
-.avatar-placeholder {
+/* Placeholder Container (for Icons and Initials) */
+.ds-avatar__placeholder {
   position: absolute;
   display: flex;
   align-items: center;
@@ -87,7 +95,7 @@
   gap: 0;
 }
 
-.avatar-placeholder-24 {
+.ds-avatar--24 .ds-avatar__placeholder {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -95,79 +103,80 @@
   height: 16px;
 }
 
-.avatar-placeholder-32 {
+.ds-avatar--32 .ds-avatar__placeholder {
   inset: 12.5%;
 }
 
-.avatar-placeholder-40 {
+.ds-avatar--40 .ds-avatar__placeholder {
   inset: 10%;
 }
 
-.avatar-placeholder-48-120 {
+.ds-avatar--48 .ds-avatar__placeholder,
+.ds-avatar--120 .ds-avatar__placeholder {
   inset: 16.67%;
 }
 
-.avatar-placeholder-64 {
+.ds-avatar--64 .ds-avatar__placeholder {
   inset: 18.75%;
 }
 
-.avatar-placeholder-80 {
+.ds-avatar--80 .ds-avatar__placeholder {
   inset: 15%;
 }
 
 /* Icon */
-.avatar-icon {
+.ds-avatar__icon {
   color: var(--color-gray-900);
   display: block;
 }
 
-/* Text Styles */
-.avatar-text {
+/* Text Styles (Initials) */
+.ds-avatar__text {
   color: var(--color-gray-950);
   text-align: center;
-  width: 100%;
+  inline-size: 100%;
   white-space: pre-wrap;
   line-height: 1;
   margin: 0;
 }
 
-.avatar-text-2xs {
+.ds-avatar--24 .ds-avatar__text {
   font-size: 10px;
   font-weight: var(--font-weight-bold);
   line-height: 14px;
 }
 
-.avatar-text-xs {
+.ds-avatar--32 .ds-avatar__text {
   font-size: 12px;
   font-weight: var(--font-weight-semibold);
   line-height: 18px;
 }
 
-.avatar-text-sm {
+.ds-avatar--40 .ds-avatar__text {
   font-size: 14px;
   font-weight: var(--font-weight-semibold);
   line-height: 20px;
 }
 
-.avatar-text-md {
+.ds-avatar--48 .ds-avatar__text {
   font-size: 16px;
   font-weight: var(--font-weight-medium);
   line-height: 24px;
 }
 
-.avatar-text-xl {
+.ds-avatar--64 .ds-avatar__text {
   font-size: 20px;
   font-weight: var(--font-weight-medium);
   line-height: 30px;
 }
 
-.avatar-text-display-sm {
+.ds-avatar--80 .ds-avatar__text {
   font-size: 30px;
   font-weight: var(--font-weight-regular);
   line-height: 38px;
 }
 
-.avatar-text-display-md {
+.ds-avatar--120 .ds-avatar__text {
   font-size: 36px;
   font-weight: var(--font-weight-regular);
   line-height: 44px;
@@ -175,7 +184,7 @@
 }
 
 /* Ring/Border Overlay */
-.avatar-ring {
+.ds-avatar__ring {
   position: absolute;
   inset: 0;
   border-style: solid;
@@ -183,28 +192,28 @@
   pointer-events: none;
 }
 
-.avatar-ring-round {
+.ds-avatar__ring--round {
   border-radius: var(--radius-full);
 }
 
-.avatar-ring-square {
+.ds-avatar__ring--square {
   border-radius: var(--radius-sm);
 }
 
-.avatar-size-120 .avatar-ring-square {
+.ds-avatar--120 .ds-avatar__ring--square {
   border-radius: var(--radius-md);
 }
 
-.avatar-ring-thin {
+.ds-avatar__ring--thin {
   border-width: 1px;
 }
 
-.avatar-ring-thick {
+.ds-avatar__ring--thick {
   border-width: 2px;
 }
 
 /* Image Container */
-.avatar-image {
+.ds-avatar__image {
   position: absolute;
   inset: 0;
   border-style: solid;
@@ -212,46 +221,51 @@
   overflow: hidden;
 }
 
-.avatar-image-round {
+.ds-avatar__image--round {
   border-radius: var(--radius-full);
 }
 
-/* Ensure round image inside also gets rounded */
-.avatar-image-round .avatar-img {
+.ds-avatar__image--round .ds-avatar__img {
   border-radius: var(--radius-full);
 }
 
-.avatar-image-square {
+.ds-avatar__image--square {
   border-radius: var(--radius-sm);
 }
 
-.avatar-size-120 .avatar-image-square {
+.ds-avatar--120 .ds-avatar__image--square {
   border-radius: var(--radius-md);
 }
 
-/* Ensure square image inside also gets rounded */
-.avatar-image-square .avatar-img {
+.ds-avatar__image--square .ds-avatar__img {
   border-radius: var(--radius-sm);
 }
 
-.avatar-size-120 .avatar-image-square .avatar-img {
+.ds-avatar--120 .ds-avatar__image--square .ds-avatar__img {
   border-radius: var(--radius-md);
 }
 
-.avatar-image-border-thin {
+.ds-avatar__image--border-thin {
   border-width: 2px;
 }
 
-.avatar-image-border-thick {
+.ds-avatar__image--border-thick {
   border-width: 4px;
 }
 
 /* Actual Image Element */
-.avatar-img {
-  width: 100%;
-  height: 100%;
+.ds-avatar__img {
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+/* Focus Styles for Accessibility */
+.ds-avatar:focus-visible {
+  outline: 2px solid var(--color-primary-600);
+  outline-offset: 2px;
+  border-radius: inherit;
 }
 

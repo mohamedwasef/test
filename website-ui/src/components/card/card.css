@@ -1,0 +1,65 @@
+/**
+ * Card Component - Framework Agnostic Styles
+ * Container for grouping related content
+ */
+
+.ds-card {
+  background-color: white;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.ds-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.ds-card--interactive {
+  cursor: pointer;
+}
+
+.ds-card--interactive:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.ds-card__header {
+  padding: var(--spacing-3xl);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.ds-card__title {
+  font-size: var(--font-size-heading-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-900);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.ds-card__subtitle {
+  font-size: var(--font-size-body-md);
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+.ds-card__body {
+  padding: var(--spacing-3xl);
+}
+
+.ds-card__footer {
+  padding: var(--spacing-3xl);
+  border-top: 1px solid var(--color-gray-100);
+  background-color: var(--color-gray-50);
+}
+
+/* Variants */
+.ds-card--elevated {
+  box-shadow: var(--shadow-sm);
+  border: none;
+}
+
+.ds-card--flat {
+  border: none;
+  background-color: var(--color-gray-50);
+}
+

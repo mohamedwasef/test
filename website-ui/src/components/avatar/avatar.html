@@ -1,0 +1,78 @@
+<!--
+  Avatar Component - Canonical HTML Structure
+  
+  This file demonstrates the expected HTML structure for the Avatar component.
+  Framework implementations should generate markup that matches this structure.
+  
+  Variants:
+  - Types: Initials, Icon, Image
+  - Sizes: 24, 32, 40, 48, 64, 80, 120 (in pixels)
+  - Shapes: Round (default), Square
+  - Border: Optional
+-->
+
+<!-- Example 1: Initials Avatar (32px, Round, No Border) -->
+<div class="ds-avatar ds-avatar--32">
+  <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+  <div class="ds-avatar__placeholder">
+    <p class="ds-avatar__text">AB</p>
+  </div>
+</div>
+
+<!-- Example 2: Initials Avatar (32px, Round, With Border) -->
+<div class="ds-avatar ds-avatar--32">
+  <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+  <div class="ds-avatar__placeholder">
+    <p class="ds-avatar__text">AB</p>
+  </div>
+  <div class="ds-avatar__ring ds-avatar__ring--round ds-avatar__ring--thin"></div>
+</div>
+
+<!-- Example 3: Icon Avatar (40px, Round) -->
+<div class="ds-avatar ds-avatar--40">
+  <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+  <div class="ds-avatar__placeholder">
+    <svg class="ds-avatar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<!-- Example 4: Image Avatar (48px, Round, With Border) -->
+<div class="ds-avatar ds-avatar--48">
+  <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+  <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+    <img class="ds-avatar__img" src="https://via.placeholder.com/48" alt="User Avatar" />
+  </div>
+  <div class="ds-avatar__ring ds-avatar__ring--round ds-avatar__ring--thin"></div>
+</div>
+
+<!-- Example 5: Initials Avatar (64px, Square) -->
+<div class="ds-avatar ds-avatar--64">
+  <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--square ds-avatar__bg--border-thin"></div>
+  <div class="ds-avatar__placeholder">
+    <p class="ds-avatar__text">JD</p>
+  </div>
+</div>
+
+<!-- Example 6: Image Avatar (120px, Square, Thick Border) -->
+<div class="ds-avatar ds-avatar--120">
+  <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--square ds-avatar__bg--border-thick"></div>
+  <div class="ds-avatar__image ds-avatar__image--square ds-avatar__image--border-thick">
+    <img class="ds-avatar__img" src="https://via.placeholder.com/120" alt="User Avatar" />
+  </div>
+  <div class="ds-avatar__ring ds-avatar__ring--square ds-avatar__ring--thick"></div>
+</div>
+
+<!--
+  CLASS NAMING CONVENTION:
+  - Block: .ds-avatar
+  - Element: .ds-avatar__[element] (e.g., ds-avatar__bg, ds-avatar__text)
+  - Modifier: .ds-avatar--[modifier] or .ds-avatar__[element]--[modifier]
+  
+  SIZE MODIFIERS: --24, --32, --40, --48, --64, --80, --120
+  SHAPE MODIFIERS: --round, --square
+  TYPE MODIFIERS: --neutral, --white
+  BORDER MODIFIERS: --border-thin, --border-thick, --thin, --thick
+-->
+

@@ -1,0 +1,89 @@
+/**
+ * Avatar Group Component - Framework Agnostic Styles
+ * Displays multiple avatars together, either stacked (overlapping) or unstacked (with spacing)
+ * RTL-ready using CSS logical properties
+ */
+
+/* Container */
+.ds-avatar-group {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  direction: inherit;
+}
+
+/* Stacked Variant - Avatars overlap */
+.ds-avatar-group--stacked {
+  padding-inline-start: 0;
+  padding-inline-end: 4px;
+  padding-block: 0;
+}
+
+/* Unstacked Variant - Avatars have spacing */
+.ds-avatar-group--unstacked {
+  gap: 4px;
+}
+
+/* Individual Avatar Item */
+.ds-avatar-group__item {
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Stacked items have negative margin to overlap */
+.ds-avatar-group--stacked .ds-avatar-group__item {
+  margin-inline-end: -4px;
+}
+
+/* Ensure avatars in group always have white border */
+.ds-avatar-group .ds-avatar__bg {
+  border-color: white;
+  border-width: 2px;
+}
+
+.ds-avatar-group .ds-avatar__image {
+  border-color: white;
+  border-width: 2px;
+}
+
+/* Z-index stacking for proper overlap (first avatar on top) */
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(1) {
+  z-index: 10;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(2) {
+  z-index: 9;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(3) {
+  z-index: 8;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(4) {
+  z-index: 7;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(5) {
+  z-index: 6;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(6) {
+  z-index: 5;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(7) {
+  z-index: 4;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(8) {
+  z-index: 3;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(9) {
+  z-index: 2;
+}
+
+.ds-avatar-group--stacked .ds-avatar-group__item:nth-child(10) {
+  z-index: 1;
+}
+

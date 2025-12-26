@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platforms Code Design System</title>
+  <link rel="stylesheet" href="../src/index.css">
+  <link rel="stylesheet" href="./docs.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="ds-header">
+    <div class="ds-header__container">
+      <a href="#" class="ds-header__brand">
+        <span>Platforms Code Design System</span>
+      </a>
+      
+      <nav class="ds-header__nav">
+        <ul class="ds-header__nav-list">
+          <li class="ds-header__nav-item">
+            <a href="#tokens" class="ds-header__nav-link">Tokens</a>
+          </li>
+          <li class="ds-header__nav-item">
+            <a href="#components" class="ds-header__nav-link ds-header__nav-link--active">Components</a>
+          </li>
+          <li class="ds-header__nav-item">
+            <a href="#usage" class="ds-header__nav-link">Usage</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="docs-main">
+    <!-- Hero Section -->
+    <section class="docs-hero">
+      <div class="docs-container">
+        <h1 class="docs-title">Framework-Agnostic Design System</h1>
+        <p class="docs-subtitle">
+          A reusable design system built with pure CSS and design tokens.
+          Use with React, Vue, Angular, or plain HTML.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tokens Section -->
+    <section id="tokens" class="docs-section">
+      <div class="docs-container">
+        <h2 class="docs-section-title">Design Tokens</h2>
+        <p class="docs-section-desc">All design values are available as CSS variables</p>
+        
+        <div class="docs-grid">
+          <div class="ds-card">
+            <div class="ds-card__header">
+              <h3 class="ds-card__title">Colors</h3>
+            </div>
+            <div class="ds-card__body">
+              <div class="docs-color-grid">
+                <div class="docs-color-swatch" style="background: var(--color-primary-600);"></div>
+                <div class="docs-color-swatch" style="background: var(--color-gray-900);"></div>
+                <div class="docs-color-swatch" style="background: var(--color-gold-500);"></div>
+                <div class="docs-color-swatch" style="background: var(--color-error-600);"></div>
+              </div>
+              <code>--color-[palette]-[shade]</code>
+            </div>
+          </div>
+
+          <div class="ds-card">
+            <div class="ds-card__header">
+              <h3 class="ds-card__title">Spacing</h3>
+            </div>
+            <div class="ds-card__body">
+              <div class="docs-spacing-demo">
+                <div class="docs-spacing-box" style="width: var(--spacing-xs);"></div>
+                <div class="docs-spacing-box" style="width: var(--spacing-md);"></div>
+                <div class="docs-spacing-box" style="width: var(--spacing-xl);"></div>
+                <div class="docs-spacing-box" style="width: var(--spacing-4xl);"></div>
+              </div>
+              <code>--spacing-[size]</code>
+            </div>
+          </div>
+
+          <div class="ds-card">
+            <div class="ds-card__header">
+              <h3 class="ds-card__title">Typography</h3>
+            </div>
+            <div class="ds-card__body">
+              <p style="font-size: var(--font-size-display-md); font-weight: var(--font-weight-bold); margin: 0;">Display</p>
+              <p style="font-size: var(--font-size-heading-lg); margin: 0;">Heading</p>
+              <p style="font-size: var(--font-size-body-md); margin: 0;">Body</p>
+              <code>--font-size-[type]-[size]</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avatar Component -->
+    <section id="components" class="docs-section">
+      <div class="docs-container">
+        <h2 class="docs-section-title">Avatar Component</h2>
+        <p class="docs-section-desc">Visual representation of users</p>
+
+        <h3 class="docs-subsection-title">Sizes</h3>
+        <div class="docs-demo">
+          <div class="ds-avatar ds-avatar--24">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">AB</p>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--32">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">AB</p>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--40">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">AB</p>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--48">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">AB</p>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--64">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">AB</p>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--80">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">AB</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="docs-subsection-title">With Icon</h3>
+        <div class="docs-demo">
+          <div class="ds-avatar ds-avatar--32">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <svg class="ds-avatar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--48">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <svg class="ds-avatar__icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="docs-subsection-title">Square Variant</h3>
+        <div class="docs-demo">
+          <div class="ds-avatar ds-avatar--32">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--square ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">JD</p>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--48">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--square ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">MA</p>
+            </div>
+          </div>
+
+          <div class="ds-avatar ds-avatar--64">
+            <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--square ds-avatar__bg--border-thin"></div>
+            <div class="ds-avatar__placeholder">
+              <p class="ds-avatar__text">KL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avatar Group -->
+    <section class="docs-section">
+      <div class="docs-container">
+        <h2 class="docs-section-title">Avatar Group</h2>
+        <p class="docs-section-desc">Multiple avatars displayed together</p>
+
+        <h3 class="docs-subsection-title">Stacked (Overlapping)</h3>
+        <div class="docs-demo">
+          <div class="ds-avatar-group ds-avatar-group--stacked">
+            <div class="ds-avatar-group__item">
+              <div class="ds-avatar ds-avatar--32">
+                <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+                <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+                  <img class="ds-avatar__img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=32&h=32&fit=crop" alt="User 1" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="ds-avatar-group__item">
+              <div class="ds-avatar ds-avatar--32">
+                <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+                <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+                  <img class="ds-avatar__img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop" alt="User 2" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="ds-avatar-group__item">
+              <div class="ds-avatar ds-avatar--32">
+                <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+                <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+                  <img class="ds-avatar__img" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop" alt="User 3" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="ds-avatar-group__item">
+              <div class="ds-avatar ds-avatar--32">
+                <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+                <div class="ds-avatar__placeholder">
+                  <p class="ds-avatar__text">+5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="docs-subsection-title">Unstacked (With Spacing)</h3>
+        <div class="docs-demo">
+          <div class="ds-avatar-group ds-avatar-group--unstacked">
+            <div class="ds-avatar-group__item">
+              <div class="ds-avatar ds-avatar--32">
+                <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+                <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+                  <img class="ds-avatar__img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=32&h=32&fit=crop" alt="User 1" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="ds-avatar-group__item">
+              <div class="ds-avatar ds-avatar--32">
+                <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+                <div class="ds-avatar__placeholder">
+                  <p class="ds-avatar__text">JD</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="ds-avatar-group__item">
+              <div class="ds-avatar ds-avatar--32">
+                <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+                <div class="ds-avatar__placeholder">
+                  <p class="ds-avatar__text">AB</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Component -->
+    <section class="docs-section">
+      <div class="docs-container">
+        <h2 class="docs-section-title">Card Component</h2>
+        <p class="docs-section-desc">Container for grouping related content</p>
+
+        <div class="docs-grid">
+          <div class="ds-card">
+            <div class="ds-card__header">
+              <h3 class="ds-card__title">Basic Card</h3>
+              <p class="ds-card__subtitle">With header and body</p>
+            </div>
+            <div class="ds-card__body">
+              <p>This is a basic card with a header and body. It has a clean, minimal design with subtle borders.</p>
+            </div>
+          </div>
+
+          <div class="ds-card ds-card--elevated">
+            <div class="ds-card__body">
+              <h3 class="ds-card__title">Elevated Card</h3>
+              <p>This card has a shadow and no border, giving it a floating appearance.</p>
+            </div>
+          </div>
+
+          <div class="ds-card ds-card--interactive">
+            <div class="ds-card__body">
+              <h3 class="ds-card__title">Interactive Card</h3>
+              <p>Hover over this card to see the elevation and transform effect.</p>
+            </div>
+            <div class="ds-card__footer">
+              <a href="#" style="color: var(--color-primary-600);">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="usage" class="docs-section" style="background-color: var(--color-gray-50);">
+      <div class="docs-container">
+        <h2 class="docs-section-title">How to Use</h2>
+        
+        <div class="ds-card">
+          <div class="ds-card__header">
+            <h3 class="ds-card__title">Plain HTML</h3>
+          </div>
+          <div class="ds-card__body">
+            <pre><code>&lt;!-- 1. Import CSS --&gt;
+&lt;link rel="stylesheet" href="path/to/src/index.css"&gt;
+
+&lt;!-- 2. Use component markup --&gt;
+&lt;div class="ds-avatar ds-avatar--48"&gt;
+  &lt;div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round"&gt;&lt;/div&gt;
+  &lt;div class="ds-avatar__placeholder"&gt;
+    &lt;p class="ds-avatar__text"&gt;AB&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+
+        <div class="ds-card" style="margin-block-start: var(--spacing-3xl);">
+          <div class="ds-card__header">
+            <h3 class="ds-card__title">React / Vue / Other Frameworks</h3>
+          </div>
+          <div class="ds-card__body">
+            <p><strong>Step 1:</strong> Import the CSS once in your app entry point</p>
+            <pre><code>import './path/to/src/index.css';</code></pre>
+            
+            <p style="margin-block-start: var(--spacing-xl);"><strong>Step 2:</strong> Create thin wrapper components that use the ds-* classes</p>
+            <pre><code>// React example
+export function Avatar({ size = '32', text = 'AB' }) {
+  return (
+    &lt;div className={`ds-avatar ds-avatar--${size}`}&gt;
+      &lt;div className="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round" /&gt;
+      &lt;div className="ds-avatar__placeholder"&gt;
+        &lt;p className="ds-avatar__text"&gt;{text}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="ds-footer">
+    <div class="ds-footer__container">
+      <div class="ds-footer__content">
+        <div class="ds-footer__section">
+          <h3 class="ds-footer__title">Resources</h3>
+          <ul class="ds-footer__list">
+            <li><a href="../src/README.md" class="ds-footer__link">Documentation</a></li>
+            <li><a href="../src/components" class="ds-footer__link">Components</a></li>
+            <li><a href="../src/tokens" class="ds-footer__link">Design Tokens</a></li>
+          </ul>
+        </div>
+        
+        <div class="ds-footer__section">
+          <h3 class="ds-footer__title">Design System</h3>
+          <ul class="ds-footer__list">
+            <li><a href="https://design.dga.gov.sa/guidelines/components/" class="ds-footer__link" target="_blank">Guidelines</a></li>
+            <li><a href="#" class="ds-footer__link">Figma Library</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="ds-footer__bottom">
+        <p class="ds-footer__copyright">
+          © 2025 Platforms Code Design System. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

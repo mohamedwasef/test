@@ -1,0 +1,12 @@
+/**
+ * Platforms Code Design System - Design Tokens
+ * Import all token definitions
+ */
+
+@import './colors.css';
+@import './typography.css';
+@import './spacing.css';
+@import './radius.css';
+@import './shadows.css';
+@import './backdrop.css';
+

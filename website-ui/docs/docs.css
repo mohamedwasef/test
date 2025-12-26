@@ -1,0 +1,177 @@
+/**
+ * Documentation Layout Styles
+ * Styles specific to the docs showcase page
+ * NOT component styles (those are in src/components/)
+ */
+
+/* Documentation Layout */
+.docs-main {
+  min-block-size: 100vh;
+  padding-block-end: var(--spacing-10xl);
+}
+
+.docs-container {
+  max-inline-size: var(--width-3xl);
+  margin-inline: auto;
+  padding-inline: var(--spacing-3xl);
+}
+
+/* Hero Section */
+.docs-hero {
+  padding-block: var(--spacing-10xl);
+  background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-primary-100) 100%);
+  text-align: start;
+}
+
+.docs-title {
+  font-size: var(--font-size-display-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+  margin-block-end: var(--spacing-xl);
+  line-height: var(--line-height-tight);
+}
+
+.docs-subtitle {
+  font-size: var(--font-size-heading-lg);
+  color: var(--color-gray-600);
+  max-inline-size: 700px;
+  line-height: var(--line-height-normal);
+}
+
+/* Sections */
+.docs-section {
+  padding-block: var(--spacing-10xl);
+  border-block-end: 1px solid var(--color-gray-200);
+}
+
+.docs-section-title {
+  font-size: var(--font-size-display-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+  margin-block-end: var(--spacing-md);
+}
+
+.docs-section-desc {
+  font-size: var(--font-size-body-lg);
+  color: var(--color-gray-600);
+  margin-block-end: var(--spacing-6xl);
+}
+
+.docs-subsection-title {
+  font-size: var(--font-size-heading-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-800);
+  margin-block-start: var(--spacing-6xl);
+  margin-block-end: var(--spacing-3xl);
+}
+
+/* Grid Layouts */
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-3xl);
+}
+
+/* Demo Areas */
+.docs-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3xl);
+  align-items: center;
+  padding-block: var(--spacing-3xl);
+  padding-inline: var(--spacing-4xl);
+  background-color: var(--color-gray-50);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-gray-200);
+}
+
+/* Color Swatches */
+.docs-color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-block-end: var(--spacing-xl);
+}
+
+.docs-color-swatch {
+  aspect-ratio: 1;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-gray-200);
+}
+
+/* Spacing Demo */
+.docs-spacing-demo {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-md);
+  margin-block-end: var(--spacing-xl);
+}
+
+.docs-spacing-box {
+  block-size: 40px;
+  background-color: var(--color-primary-500);
+  border-radius: var(--radius-sm);
+}
+
+/* Code Blocks */
+code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-body-sm);
+  background-color: var(--color-gray-100);
+  padding-inline: var(--spacing-sm);
+  padding-block: var(--spacing-xxs);
+  border-radius: var(--radius-sm);
+  color: var(--color-gray-800);
+}
+
+pre {
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-50);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin-block: var(--spacing-xl);
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: var(--font-size-body-sm);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .docs-title {
+    font-size: var(--font-size-display-md);
+  }
+
+  .docs-subtitle {
+    font-size: var(--font-size-body-lg);
+  }
+
+  .docs-section {
+    padding-block: var(--spacing-6xl);
+  }
+
+  .docs-demo {
+    padding-inline: var(--spacing-xl);
+    padding-block: var(--spacing-xl);
+  }
+
+  .docs-container {
+    padding-inline: var(--spacing-xl);
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] pre {
+  text-align: start;
+}
+
+/* Dark Mode Support (future) */
+@media (prefers-color-scheme: dark) {
+  /* Add dark mode overrides here if needed */
+}
+

@@ -1,0 +1,45 @@
+/**
+ * Platforms Code Design System - Main Entry Point
+ * Import all design tokens and component styles
+ * 
+ * This file should be imported once in your application's global styles.
+ * All CSS variables and component classes will be available throughout your app.
+ * 
+ * Usage in Angular: Import in styles.scss or add to angular.json styles array
+ * Usage in React: Import in index.js or App.js
+ * Usage in Vue: Import in main.js
+ * Usage in HTML: <link rel="stylesheet" href="path/to/ds-core/index.css">
+ */
+
+/* ===== Design Tokens ===== */
+@import './tokens/index.css';
+
+/* ===== Component Styles ===== */
+@import './components/avatar/avatar.css';
+@import './components/avatar-group/avatar-group.css';
+@import './components/header/header.css';
+@import './components/footer/footer.css';
+@import './components/card/card.css';
+
+/* ===== Global Resets & Base Styles ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-gray-900);
+  background-color: var(--color-gray-25);
+}
+

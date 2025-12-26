@@ -1,0 +1,74 @@
+/**
+ * Footer Component - Framework Agnostic Styles
+ * Page footer with links and information
+ */
+
+.ds-footer {
+  width: 100%;
+  background-color: var(--color-gray-50);
+  border-top: 1px solid var(--color-gray-200);
+  margin-top: auto;
+}
+
+.ds-footer__container {
+  max-width: var(--width-3xl);
+  margin: 0 auto;
+  padding: var(--spacing-6xl) var(--spacing-3xl) var(--spacing-4xl);
+}
+
+.ds-footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-4xl);
+  margin-bottom: var(--spacing-4xl);
+}
+
+.ds-footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.ds-footer__title {
+  font-size: var(--font-size-body-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-gray-900);
+  margin: 0;
+}
+
+.ds-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.ds-footer__link {
+  color: var(--color-gray-600);
+  text-decoration: none;
+  font-size: var(--font-size-body-sm);
+  transition: color 0.2s ease;
+}
+
+.ds-footer__link:hover {
+  color: var(--color-primary-600);
+}
+
+.ds-footer__bottom {
+  padding-top: var(--spacing-4xl);
+  border-top: 1px solid var(--color-gray-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+}
+
+.ds-footer__copyright {
+  color: var(--color-gray-600);
+  font-size: var(--font-size-body-sm);
+  margin: 0;
+}
+

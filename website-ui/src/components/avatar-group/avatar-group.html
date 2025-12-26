@@ -1,0 +1,99 @@
+<!--
+  Avatar Group Component - Canonical HTML Structure
+  
+  Displays multiple avatars together in two forms:
+  - Stacked: Avatars overlap with -4px margin
+  - Unstacked: Avatars have 4px spacing
+-->
+
+<!-- Example 1: Stacked Avatar Group (Overlapping) -->
+<div class="ds-avatar-group ds-avatar-group--stacked">
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+        <img class="ds-avatar__img" src="https://via.placeholder.com/32" alt="User 1" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+        <img class="ds-avatar__img" src="https://via.placeholder.com/32" alt="User 2" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+        <img class="ds-avatar__img" src="https://via.placeholder.com/32" alt="User 3" />
+      </div>
+    </div>
+  </div>
+  
+  <!-- Overflow Counter (shown when more avatars exist) -->
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__placeholder">
+        <p class="ds-avatar__text">+5</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Example 2: Unstacked Avatar Group (With Spacing) -->
+<div class="ds-avatar-group ds-avatar-group--unstacked">
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+        <img class="ds-avatar__img" src="https://via.placeholder.com/32" alt="User 1" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--white ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__image ds-avatar__image--round ds-avatar__image--border-thin">
+        <img class="ds-avatar__img" src="https://via.placeholder.com/32" alt="User 2" />
+      </div>
+    </div>
+  </div>
+  
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__placeholder">
+        <p class="ds-avatar__text">AB</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Overflow Counter -->
+  <div class="ds-avatar-group__item">
+    <div class="ds-avatar ds-avatar--32">
+      <div class="ds-avatar__bg ds-avatar__bg--neutral ds-avatar__bg--round ds-avatar__bg--border-thin"></div>
+      <div class="ds-avatar__placeholder">
+        <p class="ds-avatar__text">+2</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+  CLASS NAMING CONVENTION:
+  - Block: .ds-avatar-group
+  - Element: .ds-avatar-group__[element] (e.g., ds-avatar-group__item)
+  - Modifier: .ds-avatar-group--[modifier] (e.g., --stacked, --unstacked)
+  
+  VARIANT MODIFIERS:
+  - --stacked: Avatars overlap with -4px margin
+  - --unstacked: Avatars have 4px gap
+-->
+
